@@ -1,15 +1,13 @@
-// Rquired Bootstrap stuff
-
+// Import first to access these
 @import "./bootstrap/functions";
 @import "./bootstrap/variables";
 @import "./bootstrap/mixins";
 
-// Our theme
-
+// Our custom theming of boostrap
 @import "./theme.scss";
 
-// Bootstrap
+//Bootstrap default
 @import "./bootstrap/bootstrap.scss";
 
-// Our overrides
-@import "./style.scss";
+//  Style overwriting Bootstrap
+@import "style.scss";
