@@ -8,9 +8,8 @@ export default function ReviewAnswer() {
       <div className="container">
          <div className="row">
             <div className="col-12 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-               <img src={appLogo} width="32px;" alt="White Bear logo" />
-
-               <h3 className="d-inline text-brand">White Bear</h3>
+               <img src={appLogo} width="32px" alt="White Bear logo" />
+               <h3 className="d-inline text-brand ml-1">White Bear</h3>
                <button href="index.html" className="btn btn-link float-right">
                   Log out
                </button>
