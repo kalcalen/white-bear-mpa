@@ -1,30 +1,25 @@
 import React from "react";
 import thumbsUpIcon from "../../icons/thumbs-up.svg";
-import appLogo from "../../icons/logo-app.svg";
-// import Header from "../ui/Header";
+import Header from "../ui/Header";
 
 export default function ReviewAnswer() {
    return (
       <div className="container">
          <div className="row">
             <div className="col-12 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-               <img src={appLogo} width="32px" alt="White Bear logo" />
-               <h3 className="d-inline text-brand ml-1">White Bear</h3>
-               <button href="index.html" className="btn btn-link float-right">
-                  Log out
-               </button>
+               <Header />
                <div
                   className="btn-group d-flex mb-5 mt-2"
                   role="navigation"
                   aria-label="navigation"
                >
-                  <a
+                  <button
                      href="create-answer.html"
                      type="button"
                      className="btn btn-secondary"
                   >
                      Create New
-                  </a>
+                  </button>
                   <button
                      type="button"
                      className="btn btn-secondary tab-separator tab-active"
