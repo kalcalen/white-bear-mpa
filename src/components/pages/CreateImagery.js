@@ -1,6 +1,7 @@
 import React from "react";
 import saveIcon from "../../icons/save.svg";
 import Header from "../ui/Header";
+import Navigation from "../ui/Navigation";
 
 export default function CreateImagery() {
    return (
@@ -8,51 +9,20 @@ export default function CreateImagery() {
          <div className="row">
             <div className="col-12 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                <Header />
-               <div
-                  className="btn-group d-flex mb-5 mt-2"
-                  role="navigation"
-                  aria-label="navigation"
-               >
-                  <button
-                     href="create-answer.html"
-                     type="button"
-                     className="btn btn-secondary tab-active"
-                  >
-                     Create New
-                  </button>
-
-                  <button
-                     href="review-answer.html"
-                     type="button"
-                     className="btn btn-secondary"
-                  >
-                     Review
-                  </button>
-
-                  <button
-                     href="all-cards.html"
-                     type="button"
-                     className="btn btn-secondary tab-separator"
-                  >
-                     All cards
-                  </button>
-               </div>
+               <Navigation />
                <h4 className="my-4 text-center text-primary text-muted">
                   Add memorable imagery
                </h4>
                <div className="mb-2">
                   <div className="card bg-primary">
                      <div className="card-body">
-                        <textarea rows="11" className="d-sm-none">
-                           {" "}
-                        </textarea>
+                        <textarea rows="11" className="d-sm-none"></textarea>
                         <textarea
                            rows="6"
                            className="d-none d-sm-block"
                         ></textarea>
                      </div>
                   </div>
-
                   <div className="card bg-secondary">
                      <div className="card-body">
                         One morning, when Gregor Samsa woke from troubled
@@ -64,7 +34,7 @@ export default function CreateImagery() {
                      </div>
                   </div>
                </div>
-               <p className="float-right mb-5">0/240</p>``
+               <p className="float-right mb-5">0/240</p>
                <div className="clearfix"></div>
                <button id="back2-answer" className="btn btn-link">
                   Back to answer
