@@ -1,21 +1,62 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navigation() {
+   const url = window.location.pathname;
+
+   const tabActiveOnCreate = (url) => {
+      if (
+         url.indexOf("create-imagery") > 0 ||
+         url.indexOf("create-answer") > 0
+      ) {
+         return "tab-active";
+      } else return "";
+   };
+   const tabActiveOnReview = (url) => {
+      if (
+         url.indexOf("review-imagery") > 0 ||
+         url.indexOf("review-answer") > 0 ||
+         url.indexOf("review-empty") > 0
+      ) {
+         return "tab-active";
+      } else return "";
+   };
+   const tabActiveOnAllCards = (url) => {
+      if (url.indexOf("all-cards") > 0) {
+         return "tab-active";
+      } else return "";
+   };
    return (
       <div
          className="btn-group d-flex mb-5 mt-2"
          role="navigation"
          aria-label="navigation"
       >
-         <button type="button" className="btn btn-secondary tab-active">
+         <Link
+            to="/create-answer"
+            type="button"
+            className={`btn btn-secondary ${tabActiveOnCreate(url)}`}
+         >
             Create New
-         </button>
-         <button type="button" className="btn btn-secondary">
+         </Link>
+         <Link
+            to="review-imagery"
+            type="button"
+            className={`btn btn-secondary tab-separator ${tabActiveOnReview(
+               url
+            )}`}
+         >
             Review
-         </button>
-         <button type="button" className="btn btn-secondary tab-separator">
+         </Link>
+         <Link
+            to="/all-cards"
+            type="button"
+            className={`btn btn-secondary tab-separator ${tabActiveOnAllCards(
+               url
+            )}`}
+         >
             All cards
-         </button>
+         </Link>
       </div>
    );
 }
