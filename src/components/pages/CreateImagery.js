@@ -1,14 +1,10 @@
 import React from "react";
 import saveIcon from "../../icons/save.svg";
-import Header from "../ui/Header";
-import Navigation from "../ui/Navigation";
 import AppTemplate from "../ui/AppTemplate";
 
 export default function CreateImagery() {
    return (
       <AppTemplate>
-         <Header />
-         <Navigation />
          <h4 className="my-4 text-center text-primary text-muted">
             Add memorable imagery
          </h4>

@@ -1,15 +1,11 @@
 import React from "react";
 import saveIcon from "../../icons/save.svg";
-import Header from "../ui/Header";
-import Navigation from "../ui/Navigation";
 import AppTemplate from "../ui/AppTemplate";
 import Edit from "../../icons/edit.svg";
 
 export default function ReviewImagery() {
    return (
       <AppTemplate>
-         <Header />
-         <Navigation />
          <div class="row justify-content mb-3">
             <div class="col-8">
                <input

@@ -1,13 +1,9 @@
 import React from "react";
-import Header from "../ui/Header";
-import Navigation from "../ui/Navigation";
 import AppTemplate from "../ui/AppTemplate";
 
 export default function ReviewImagery() {
    return (
       <AppTemplate>
-         <Header />
-         <Navigation />
          <div class="mb-2">
             <div class="card bg-primary mb-5">
                <div class="card-body">
