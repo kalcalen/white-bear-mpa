@@ -9,15 +9,15 @@ export default function ReviewEmpty() {
          <Header />
          <Navigation />
          <h2 class="text-muted text-center my-3">Out of cards</h2>
-         <button href="review-answer.html" className="btn btn-link">
+         <a href="review-answer.html" className="btn btn-link">
             Previous card
-         </button>
-         <button
-            href="create-answer.html"
+         </a>
+         <a
+            href="review-imagery"
             className="btn btn-outline-primary float-right"
          >
             Get more cards
-         </button>
+         </a>
       </AppTemplate>
    );
 }

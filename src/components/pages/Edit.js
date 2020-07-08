@@ -36,12 +36,12 @@ export default function Edit() {
 
          <div class="clearfix"></div>
 
-         <a href="all-cards.html" class="btn btn-link">
+         <a href="all-cards" class="btn btn-link">
             Discards changes
          </a>
          <div class="float-right">
             <a
-               href="all-cards.html"
+               href="all-cards"
                class="btn btn-lg btn-primary float-right"
                id="save-imagery"
             >
@@ -55,7 +55,7 @@ export default function Edit() {
             </a>
          </div>
 
-         <h4 class="my-4 mb-5 text-center text-primary text-muted">
+         <h4 class="my-4 mb-5 text-center text-primary text-muted mt-5">
             Card properties
          </h4>
          <div class="row mb-3">
@@ -76,6 +76,25 @@ export default function Edit() {
             </div>
             <div class="col-4">Dec. 24, 2019</div>
          </div>
+
+         <div className="custom-control custom-checkbox col-12 mb-2">
+            <input
+               type="checkbox"
+               className="custom-control-input"
+               id="customCheck1"
+            />
+            <label className="custom-control-label" htmlFor="customCheck1">
+               Show delete button
+            </label>
+         </div>
+
+         <a
+            id="delete-card"
+            className="btn btn-outline-danger btn-lg mt-3 mb-5"
+            href="all-cards"
+         >
+            Delete this card
+         </a>
       </AppTemplate>
    );
 }

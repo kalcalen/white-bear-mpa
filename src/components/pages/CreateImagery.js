@@ -31,13 +31,14 @@ export default function CreateImagery() {
          </div>
          <p className="float-right mb-5">0/240</p>
          <div className="clearfix"></div>
-         <button id="back2-answer" className="btn btn-link">
+         <a id="back2-answer" className="btn btn-link" href="create-answer">
             Back to answer
-         </button>
+         </a>
          <div className="float-right">
-            <button
+            <a
                className="btn btn-lg btn-primary float-right"
                id="save-imagery"
+               href="create-answer"
             >
                <img
                   src={saveIcon}
@@ -46,7 +47,7 @@ export default function CreateImagery() {
                   alt=""
                />
                Save
-            </button>
+            </a>
          </div>
       </AppTemplate>
    );

@@ -47,12 +47,13 @@ export default function Landing() {
                                  name="password"
                               />
                               <div class="text-danger" id="passwordError"></div>
-                              <button
+                              <a
                                  id="letsGo"
                                  class="btn btn-success btn-block float-right mt-3"
+                                 href="create-answer"
                               >
                                  Lets go!
-                              </button>
+                              </a>
                            </div>
                         </div>
                      </div>
@@ -85,7 +86,7 @@ export default function Landing() {
                                  name="password"
                               />
                               <a
-                                 href="create-answer.html"
+                                 href="create-answer"
                                  class="btn btn-success float-right"
                               >
                                  Log in

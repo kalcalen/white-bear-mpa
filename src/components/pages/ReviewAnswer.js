@@ -31,17 +31,14 @@ export default function ReviewAnswer() {
             </div>
          </div>
 
-         <a href="edit.html" className="btn btn-link">
+         <a href="edit" className="btn btn-link">
             Edit
          </a>
          <div className="float-right">
-            <button
-               href="review-done.html"
-               className="btn btn-outline-primary mr-4"
-            >
+            <a href="review-empty" className="btn btn-outline-primary mr-4">
                Needs work
-            </button>
-            <button href="review-done.html" className="btn btn-primary">
+            </a>
+            <a href="review-imagery" className="btn btn-primary">
                <img
                   src={thumbsUpIcon}
                   width="20px"
@@ -49,7 +46,7 @@ export default function ReviewAnswer() {
                   alt=""
                />
                Got it
-            </button>
+            </a>
          </div>
       </AppTemplate>
    );

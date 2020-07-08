@@ -22,12 +22,11 @@ export default function ReviewImagery() {
 
          <div class="clearfix"></div>
 
-         <button class="btn btn-link">Previous card</button>
+         <a class="btn btn-link" href="review-answer">
+            Previous card
+         </a>
          <div class="float-right">
-            <a
-               href="review-answer.html"
-               class="btn btn-outline-primary float-right"
-            >
+            <a href="review-answer" class="btn btn-outline-primary float-right">
                Show answer
             </a>
          </div>

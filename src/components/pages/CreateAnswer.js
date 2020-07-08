@@ -27,7 +27,7 @@ export default function CreateAnswer() {
             <Link
                id="nextBcreate"
                to="/create-imagery"
-               className="btn btn-lg btn-outline-primary float-right disabled"
+               className="btn btn-lg btn-outline-primary float-right "
             >
                Next
             </Link>

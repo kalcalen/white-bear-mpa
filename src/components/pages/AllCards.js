@@ -52,7 +52,7 @@ export default function ReviewImagery() {
                      </div>
                   </div>
                </div>
-               <a href="edit.html" class="btn btn-link col-2">
+               <a href="Edit" class="btn btn-link col-2">
                   <img src={Edit} width="20px" alt="" />
                   Edit
                </a>
@@ -70,7 +70,7 @@ export default function ReviewImagery() {
                      </div>
                   </div>
                </div>
-               <a href="edit.html" class="btn btn-link col-2">
+               <a href="Edit" class="btn btn-link col-2">
                   <img src={Edit} width="20px" alt="" />
                   Edit
                </a>
