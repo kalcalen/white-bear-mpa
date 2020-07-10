@@ -2,6 +2,7 @@ import React from "react";
 import thumbsUpIcon from "../../icons/thumbs-up.svg";
 import AppTemplate from "../ui/AppTemplate";
 import memoryCards from "../../mock-data/memory-cards";
+import { Link } from "react-router-dom";
 
 const memoryCard = memoryCards[0];
 
@@ -18,14 +19,14 @@ export default function ReviewAnswer() {
             </div>
          </div>
 
-         <a href="edit" className="btn btn-link">
+         <Link href="edit" className="btn btn-link">
             Edit
-         </a>
+         </Link>
          <div className="float-right">
-            <a href="review-empty" className="btn btn-outline-primary mr-4">
+            <Link href="review-empty" className="btn btn-outline-primary mr-4">
                Needs work
-            </a>
-            <a href="review-imagery" className="btn btn-primary">
+            </Link>
+            <Link href="review-imagery" className="btn btn-primary">
                <img
                   src={thumbsUpIcon}
                   width="20px"
@@ -33,7 +34,7 @@ export default function ReviewAnswer() {
                   alt=""
                />
                Got it
-            </a>
+            </Link>
          </div>
       </AppTemplate>
    );

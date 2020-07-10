@@ -1,6 +1,7 @@
 import React from "react";
 import AppTemplate from "../ui/AppTemplate";
 import memoryCards from "../../mock-data/memory-cards";
+import { Link } from "react-router-dom";
 
 const memoryCard = memoryCards[0];
 
@@ -15,13 +16,16 @@ export default function ReviewImagery() {
 
          <div class="clearfix"></div>
 
-         <a class="btn btn-link" href="review-answer">
+         <Link class="btn btn-link" href="review-answer">
             Previous card
-         </a>
+         </Link>
          <div class="float-right">
-            <a href="review-answer" class="btn btn-outline-primary float-right">
+            <Link
+               href="review-answer"
+               class="btn btn-outline-primary float-right"
+            >
                Show answer
-            </a>
+            </Link>
          </div>
       </AppTemplate>
    );

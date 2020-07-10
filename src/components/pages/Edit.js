@@ -114,13 +114,13 @@ export default function Edit() {
             </label>
          </div>
 
-         <a
+         <Link
             id="delete-card"
             className="btn btn-outline-danger btn-lg mt-3 mb-5"
             href="all-cards"
          >
             Delete this card
-         </a>
+         </Link>
       </AppTemplate>
    );
 }

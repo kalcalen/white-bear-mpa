@@ -2,6 +2,7 @@ import React from "react";
 import saveIcon from "../../icons/save.svg";
 import AppTemplate from "../ui/AppTemplate";
 import memoryCards from "../../mock-data/memory-cards";
+import { Link } from "react-router-dom";
 
 const memoryCard = memoryCards[0];
 
@@ -28,7 +29,7 @@ export default function CreateImagery() {
             Back to answer
          </a>
          <div className="float-right">
-            <a
+            <Link
                className="btn btn-lg btn-primary float-right"
                id="save-imagery"
                href="create-answer"
@@ -40,7 +41,7 @@ export default function CreateImagery() {
                   alt=""
                />
                Save
-            </a>
+            </Link>
          </div>
       </AppTemplate>
    );
