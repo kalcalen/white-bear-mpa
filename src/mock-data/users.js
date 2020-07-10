@@ -1,7 +1,6 @@
 const users = [
    {
       id: "8b199a20-a26f-4920-b462-ecc734f4c8a2",
-
       email: "fakeemail@yahoo.com",
       password: "012647D1CE06C3DB9110AFDC602DF401D72AFF82",
       createdAt: 1594337108,

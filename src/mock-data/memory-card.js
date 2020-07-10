@@ -1,10 +1,9 @@
 const memoryCards = [
    {
       id: "90f9cf94-195c-4169-a25e-03b9c1d496b6",
-      imagery:
-         "Jim Thorpe, the old-time footballer, has 8 octopus arms and he's using them to cook hash browns.",
-      answer: 'The technical term for a hashtag is "octothorpe."',
-      userId: "16672b8b-6946-4016-b7b8-f450b911f69e",
+      imagery: "Double step back slasher",
+      answer: '"../" goes up a folder',
+      userId: "8b199a20-a26f-4920-b462-ecc734f4c8a2",
       createdAt: 1591812408361,
       nextAttemptAt: 1591812408361,
       lastAttemptAt: 1591812408361,
@@ -13,10 +12,9 @@ const memoryCards = [
    },
    {
       id: "fe88fda4-5c5d-4cca-81ff-6ecdd206ac8e",
-      imagery:
-         "I reach in the glovebox of my blue Dodge Dakota to pull out a map—instead, hundreds come flying out at me all at once.",
-      answer: ".map() is asynchronous.",
-      userId: "16672b8b-6946-4016-b7b8-f450b911f69e",
+      imagery: "Git this dumb shit in there (hillbilly voice)",
+      answer: "'git add .'Initializes first repository",
+      userId: "8b199a20-a26f-4920-b462-ecc734f4c8a2",
       createdAt: 1591850761968,
       nextAttemptAt: 1591812408361,
       lastAttemptAt: 1591812408361,
@@ -25,9 +23,9 @@ const memoryCards = [
    },
    {
       id: "b4be4694-8b19-4c1f-bac3-85db1241849e",
-      imagery: "A stick person walking from left to right, leaning forward.",
+      imagery: "sudowoodo",
       answer: '/ is a "forward slash"',
-      userId: "16672b8b-6946-4016-b7b8-f450b911f69e",
+      userId: "bc090064-8e5a-4456-b5ba-001eccc7f823",
       createdAt: 1591850787199,
       nextAttemptAt: 1591812408361,
       lastAttemptAt: 1591812408361,
@@ -36,9 +34,9 @@ const memoryCards = [
    },
    {
       id: "796c5c57-ba22-4fe0-8d10-f208110f6666",
-      imagery: "A stick person walking from left to right, leaning backward.",
-      answer: '\\ is a "backward slash"',
-      userId: "16672b8b-6946-4016-b7b8-f450b911f69e",
+      imagery: "Me and the click command you all to comment out",
+      answer: '"command /" is used for making comments',
+      userId: "bc090064-8e5a-4456-b5ba-001eccc7f823",
       createdAt: 1591850777694,
       nextAttemptAt: 1591812408361,
       lastAttemptAt: 1591812408361,
