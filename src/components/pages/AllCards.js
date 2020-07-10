@@ -27,7 +27,7 @@ export default function Allcards() {
             </div>
             <div className="col-8">
                <select className="custom-select" id="inputGroupSelect01">
-                  <option selected>Most recent</option>
+                  <option value>Most recent</option>
                   <option value="1">Oldest</option>
                   <option value="2">Hardest</option>
                   <option value="3">Easiest</option>

@@ -117,7 +117,7 @@ export default function Edit() {
          <Link
             id="delete-card"
             className="btn btn-outline-danger btn-lg mt-3 mb-5"
-            href="all-cards"
+            to="all-cards"
          >
             Delete this card
          </Link>

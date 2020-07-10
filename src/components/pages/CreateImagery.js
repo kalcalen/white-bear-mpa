@@ -32,7 +32,7 @@ export default function CreateImagery() {
             <Link
                className="btn btn-lg btn-primary float-right"
                id="save-imagery"
-               href="create-answer"
+               to="create-answer"
             >
                <img
                   src={saveIcon}

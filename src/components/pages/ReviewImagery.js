@@ -16,12 +16,12 @@ export default function ReviewImagery() {
 
          <div className="clearfix"></div>
 
-         <Link className="btn btn-link" href="review-answer">
+         <Link className="btn btn-link" to="review-answer">
             Previous card
          </Link>
          <div className="float-right">
             <Link
-               href="review-answer"
+               to="review-answer"
                className="btn btn-outline-primary float-right"
             >
                Show answer
