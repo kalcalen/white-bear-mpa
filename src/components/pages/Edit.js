@@ -1,30 +1,45 @@
 import React from "react";
 import AppTemplate from "../ui/AppTemplate";
 import saveIcon from "../../icons/save.svg";
+import memoryCards from "../../mock-data/memory-cards";
+import { Link } from "react-router-dom";
+
+const memoryCard = memoryCards[0];
 
 export default function Edit() {
    return (
       <AppTemplate>
-         <h4 class="my-4 text-center text-primary text-muted">Edit card</h4>
+         <p class="my-4 text-center text-primary text-muted">Edit card</p>
 
          <div class="mb-2">
             <div class="card bg-primary">
                <div class="card-body">
-                  <textarea rows="11" class="d-sm-none">
-                     {" "}
-                  </textarea>
-                  <textarea rows="6" class="d-none d-sm-block"></textarea>
+                  <textarea
+                     rows="11"
+                     class="d-sm-none"
+                     defaultValue={memoryCard.imagery}
+                  ></textarea>
+                  <textarea
+                     rows="6"
+                     class="d-none d-sm-block"
+                     defaultValue={memoryCard.imagery}
+                  ></textarea>
                </div>
             </div>
+         </div>
 
-            <div class="card bg-secondary">
-               <div class="card-body">
-                  One morning, when Gregor Samsa woke from troubled dreams, he
-                  found himself transformed in his bed into a horrible vermin.
-                  He lay on his armour-like back, and if he lifted his head a
-                  little he could see his brown belly, slightly domed and
-                  divided by arches into stiff sections. The bedding was hardly.
-               </div>
+         <div class="card">
+            <div class="card-body bg-secondary">
+               <textarea
+                  rows="11"
+                  class="d-sm-none"
+                  defaultValue={memoryCard.answer}
+               ></textarea>
+               <textarea
+                  rows="6"
+                  class="d-none d-sm-block"
+                  defaultValue={memoryCard.answer}
+               ></textarea>
             </div>
          </div>
 
@@ -32,12 +47,12 @@ export default function Edit() {
 
          <div class="clearfix"></div>
 
-         <a href="all-cards" class="btn btn-link">
+         <Link to="all-cards" class="btn btn-link">
             Discards changes
-         </a>
+         </Link>
          <div class="float-right">
-            <a
-               href="all-cards"
+            <Link
+               to="all-cards"
                class="btn btn-lg btn-primary float-right"
                id="save-imagery"
             >
@@ -48,7 +63,7 @@ export default function Edit() {
                   alt=""
                />
                Save
-            </a>
+            </Link>
          </div>
 
          <h4 class="my-4 mb-5 text-center text-primary text-muted mt-5">
@@ -58,19 +73,33 @@ export default function Edit() {
             <div class="col-8">
                <p class="text-muted">Created on:</p>
             </div>
-            <div class="col-4">Dec. 24, 2019</div>
+            <div class="col-4">
+               <p>{memoryCard.createdAt}</p>{" "}
+            </div>
          </div>
          <div class="row mb-3">
             <div class="col-8">
                <p class="text-muted">Last attempt:</p>
             </div>
-            <div class="col-4">Dec. 24, 2019</div>
+            <div class="col-4">
+               <p>{memoryCard.lastAttemptAt}</p>{" "}
+            </div>
          </div>
          <div class="row mb-3">
             <div class="col-8">
                <p class="text-muted">Next attempt:</p>
             </div>
-            <div class="col-4">Dec. 24, 2019</div>
+            <div class="col-4">
+               <p>{memoryCard.nextAttemptAt}</p>{" "}
+            </div>
+         </div>
+         <div class="row mb-3">
+            <div class="col-8">
+               <p class="text-muted">Consecutives:</p>
+            </div>
+            <div class="col-4">
+               <p>{memoryCard.totalSuccessfulAttempts}</p>{" "}
+            </div>
          </div>
 
          <div className="custom-control custom-checkbox col-12 mb-2">

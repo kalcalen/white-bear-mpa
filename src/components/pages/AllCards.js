@@ -1,9 +1,9 @@
 import React from "react";
-import saveIcon from "../../icons/save.svg";
 import AppTemplate from "../ui/AppTemplate";
-import Edit from "../../icons/edit.svg";
+import memoryCards from "../../mock-data/memory-cards";
+import MemoryCard from "../ui/MemoryCard";
 
-export default function ReviewImagery() {
+export default function Allcards() {
    return (
       <AppTemplate>
          <div class="row justify-content mb-3">
@@ -34,61 +34,16 @@ export default function ReviewImagery() {
                </select>
             </div>
          </div>
-         <div class="mb-2">
-            <div class="row">
-               <div class="col-10">
-                  <div class="card bg-primary">
-                     <div class="card-body">
-                        One morning, when Gregor Samsa woke from troubled
-                        dreams, he found himself transformed in his bed into a
-                        horrible vermin. He lay on his armour-like back, and if
-                        he lifted his head a little he could see his brown
-                        belly, slightly domed and divided by arches into stiff
-                        sections. The bedding was hardly.
-                     </div>
-                  </div>
-               </div>
-               <a href="Edit" class="btn btn-link col-2">
-                  <img src={Edit} width="20px" alt="" />
-                  Edit
-               </a>
-            </div>
-            <div class="row">
-               <div class="col-10">
-                  <div class="card bg-secondary">
-                     <div class="card-body">
-                        One morning, when Gregor Samsa woke from troubled
-                        dreams, he found himself transformed in his bed into a
-                        horrible vermin. He lay on his armour-like back, and if
-                        he lifted his head a little he could see his brown
-                        belly, slightly domed and divided by arches into stiff
-                        sections. The bedding was hardly.
-                     </div>
-                  </div>
-               </div>
-               <a href="Edit" class="btn btn-link col-2">
-                  <img src={Edit} width="20px" alt="" />
-                  Edit
-               </a>
-            </div>
-            <p class="float-right mb-5">0/240</p>
-            <div class="clearfix"></div>
-            <button class="btn btn-link">Back to answer</button>
-            <div class="float-right">
-               <button
-                  class="btn btn-lg btn-primary float-right mb-5"
-                  id="save-imagery"
-               >
-                  <img
-                     src={saveIcon}
-                     width="20px"
-                     style={{ marginBottom: "5px" }}
-                     alt=""
-                  />
-                  Save
-               </button>
-            </div>
-         </div>
+
+         {memoryCards.map((memoryCard) => {
+            return (
+               <MemoryCard
+                  answer={memoryCard.answer}
+                  imagery={memoryCard.imagery}
+                  key={memoryCard.id}
+               />
+            );
+         })}
       </AppTemplate>
    );
 }
