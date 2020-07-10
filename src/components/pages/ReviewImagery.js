@@ -8,21 +8,21 @@ const memoryCard = memoryCards[0];
 export default function ReviewImagery() {
    return (
       <AppTemplate>
-         <div class="mb-2">
-            <div class="card bg-primary mb-5">
-               <div class="card-body">{memoryCard.imagery}</div>
+         <div className="mb-2">
+            <div className="card bg-primary mb-5">
+               <div className="card-body">{memoryCard.imagery}</div>
             </div>
          </div>
 
-         <div class="clearfix"></div>
+         <div className="clearfix"></div>
 
-         <Link class="btn btn-link" href="review-answer">
+         <Link className="btn btn-link" href="review-answer">
             Previous card
          </Link>
-         <div class="float-right">
+         <div className="float-right">
             <Link
                href="review-answer"
-               class="btn btn-outline-primary float-right"
+               className="btn btn-outline-primary float-right"
             >
                Show answer
             </Link>

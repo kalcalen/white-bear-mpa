@@ -10,51 +10,51 @@ const memoryCard = memoryCards[0];
 export default function Edit() {
    return (
       <AppTemplate>
-         <p class="my-4 text-center text-primary text-muted">Edit card</p>
+         <p className="my-4 text-center text-primary text-muted">Edit card</p>
 
-         <div class="mb-2">
-            <div class="card bg-primary">
-               <div class="card-body">
+         <div className="mb-2">
+            <div className="card bg-primary">
+               <div className="card-body">
                   <textarea
                      rows="11"
-                     class="d-sm-none"
+                     className="d-sm-none"
                      defaultValue={memoryCard.imagery}
                   ></textarea>
                   <textarea
                      rows="6"
-                     class="d-none d-sm-block"
+                     className="d-none d-sm-block"
                      defaultValue={memoryCard.imagery}
                   ></textarea>
                </div>
             </div>
          </div>
 
-         <div class="card">
-            <div class="card-body bg-secondary">
+         <div className="card">
+            <div className="card-body bg-secondary">
                <textarea
                   rows="11"
-                  class="d-sm-none"
+                  className="d-sm-none"
                   defaultValue={memoryCard.answer}
                ></textarea>
                <textarea
                   rows="6"
-                  class="d-none d-sm-block"
+                  className="d-none d-sm-block"
                   defaultValue={memoryCard.answer}
                ></textarea>
             </div>
          </div>
 
-         <p class="float-right mb-5">0/240</p>
+         <p className="float-right mb-5">0/240</p>
 
-         <div class="clearfix"></div>
+         <div className="clearfix"></div>
 
-         <Link to="all-cards" class="btn btn-link">
+         <Link to="all-cards" className="btn btn-link">
             Discards changes
          </Link>
-         <div class="float-right">
+         <div className="float-right">
             <Link
                to="all-cards"
-               class="btn btn-lg btn-primary float-right"
+               className="btn btn-lg btn-primary float-right"
                id="save-imagery"
             >
                <img
@@ -67,38 +67,38 @@ export default function Edit() {
             </Link>
          </div>
 
-         <h4 class="my-4 mb-5 text-center text-primary text-muted mt-5">
+         <h4 className="my-4 mb-5 text-center text-primary text-muted mt-5">
             Card properties
          </h4>
-         <div class="row mb-3">
-            <div class="col-8">
-               <p class="text-muted">Created on:</p>
+         <div className="row mb-3">
+            <div className="col-8">
+               <p className="text-muted">Created on:</p>
             </div>
-            <div class="col-4">
+            <div className="col-4">
                <p>{toDisplayDate(memoryCard.createdAt, "MMM.do, y")}</p>{" "}
             </div>
          </div>
-         <div class="row mb-3">
-            <div class="col-8">
-               <p class="text-muted">Last attempt:</p>
+         <div className="row mb-3">
+            <div className="col-8">
+               <p className="text-muted">Last attempt:</p>
             </div>
-            <div class="col-4">
+            <div className="col-4">
                <p>{toDisplayDate(memoryCard.lastAttemptAt, "MMM.d, y")}</p>{" "}
             </div>
          </div>
-         <div class="row mb-3">
-            <div class="col-8">
-               <p class="text-muted">Next attempt:</p>
+         <div className="row mb-3">
+            <div className="col-8">
+               <p className="text-muted">Next attempt:</p>
             </div>
-            <div class="col-4">
+            <div className="col-4">
                <p>{toDisplayDate(memoryCard.nextAttemptAt, "MMM.d, y")}</p>{" "}
             </div>
          </div>
-         <div class="row mb-3">
-            <div class="col-8">
-               <p class="text-muted">Consecutives:</p>
+         <div className="row mb-3">
+            <div className="col-8">
+               <p className="text-muted">Consecutives:</p>
             </div>
-            <div class="col-4">
+            <div className="col-4">
                <p>{memoryCard.totalSuccessfulAttempts}</p>{" "}
             </div>
          </div>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function ReviewEmpty() {
    return (
       <AppTemplate>
-         <h2 class="text-muted text-center my-3">Out of cards</h2>
+         <h2 className="text-muted text-center my-3">Out of cards</h2>
          <Link href="review-answer.html" className="btn btn-link">
             Previous card
          </Link>
