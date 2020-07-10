@@ -1,9 +1,9 @@
 import React from "react";
 import AppTemplate from "../ui/AppTemplate";
 import saveIcon from "../../icons/save.svg";
+import { Link } from "react-router-dom";
 import memoryCards from "../../mock-data/memory-cards";
 import toDisplayDate from "date-fns/format";
-import { Link } from "react-router-dom";
 
 const memoryCard = memoryCards[0];
 
