@@ -22,10 +22,6 @@ export default function MemoryCard(props) {
                   <div class="card-body">{props.answer}</div>
                </div>
             </div>
-            <Link to="/edit" class="btn btn-link col-2">
-               <img src={Edit} width="20px" alt="" />
-               Edit
-            </Link>
          </div>
       </div>
    );
