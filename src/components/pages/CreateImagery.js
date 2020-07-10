@@ -1,6 +1,9 @@
 import React from "react";
 import saveIcon from "../../icons/save.svg";
 import AppTemplate from "../ui/AppTemplate";
+import memoryCards from "../../mock-data/memory-cards";
+
+const memoryCard = memoryCards[0];
 
 export default function CreateImagery() {
    return (
@@ -16,13 +19,7 @@ export default function CreateImagery() {
                </div>
             </div>
             <div className="card bg-secondary">
-               <div className="card-body">
-                  One morning, when Gregor Samsa woke from troubled dreams, he
-                  found himself transformed in his bed into a horrible vermin.
-                  He lay on his armour-like back, and if he lifted his head a
-                  little he could see his brown belly, slightly domed and
-                  divided by arches into stiff sections. The bedding was hardly.
-               </div>
+               <div className="card-body">{memoryCard.answer}</div>
             </div>
          </div>
          <p className="float-right mb-5">0/240</p>
