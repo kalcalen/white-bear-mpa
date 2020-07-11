@@ -5,14 +5,14 @@ export default function Landing() {
    return (
       <>
          <div className="background-image">
-            <div className="container">
+            <div className="container-fluid">
                <div className="row">
                   <img src={landingBear} alt="" />
                   <h1 className="index-logo">White Bear</h1>
                </div>
 
                <div className="row card-index">
-                  <div className="col-xl-5 offset-xl-1 col-sm-8 col-lg-8 offset-4 offset-sm-2 offset-md-2 col-10 offset-1">
+                  <div className="offset-1 col-10 offset-sm-2 col-sm-8 offset-md-1 col-md-5 offset-lg-2 col-lg-4 offset-xl-1 col-xl-4">
                      <div className="card mb-5">
                         <div className="card-body landing-text">
                            <h2 className="card-title">Nice to meet you</h2>
@@ -62,7 +62,7 @@ export default function Landing() {
                      </div>
                   </div>
 
-                  <div className="col-xl-5 offset-xl-1 col-sm-8 col-lg-8 offset-sm-2 col-10 offset-1">
+                  <div className="offset-1 col-10 offset-sm-2 col-sm-8 offset-md-1 col-md-5 offset-lg-1 col-lg-4 offset-xl-1 col-xl-5">
                      <div className="card mb-5">
                         <div className="card-body landing-text">
                            <h2 className="card-title">Welcome Back</h2>
