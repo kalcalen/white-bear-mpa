@@ -139,6 +139,7 @@ export default class SignUp extends React.Component {
                            Create a Password
                         </label>
                         <input
+                           type="password"
                            className={classnames({
                               "form-control": true,
                               "mb-2": true,
