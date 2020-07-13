@@ -1,5 +1,7 @@
 import React from "react";
 import classnames from "classnames";
+import hash from "object-hash";
+import { v4 as getuuid } from "uuid";
 
 export default class SignUp extends React.Component {
    constructor(props) {
@@ -20,7 +22,7 @@ export default class SignUp extends React.Component {
       });
    }
 
-   setEmailState(emailInput) {
+   async setEmailState(emailInput) {
       console.log(emailInput);
       const lowerCasedEmailInput = emailInput.toLowerCase();
       console.log(lowerCasedEmailInput);
@@ -51,7 +53,7 @@ export default class SignUp extends React.Component {
       else return passwordInput.includes(localPart);
    }
 
-   setPasswordState(passwordInput, emailInput) {
+   async setPasswordState(passwordInput, emailInput) {
       console.log(passwordInput);
 
       const uniqChars = [...new Set(passwordInput)];
@@ -81,16 +83,22 @@ export default class SignUp extends React.Component {
       }
    }
 
-   validateAndCreateUser() {
+   async validateAndCreateUser() {
       const emailInput = document.getElementById("email-input").value;
       const passwordInput = document.getElementById("password-input").value;
-      this.setEmailState(emailInput);
-      this.setPasswordState(passwordInput, emailInput);
+      await this.setEmailState(emailInput);
+      await this.setPasswordState(passwordInput, emailInput);
       if (
          this.state.hasEmailError === false &&
          this.state.hasPasswordError === false
       ) {
-         console.log("VALID!!");
+         const user = {
+            id: getuuid(),
+            email: emailInput,
+            password: hash(passwordInput),
+            createdAt: Date.now(),
+         };
+         console.log(user);
       }
    }
 
