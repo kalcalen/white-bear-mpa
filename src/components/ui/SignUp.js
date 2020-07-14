@@ -84,8 +84,9 @@ export default class SignUp extends React.Component {
    }
 
    async validateAndCreateUser() {
-      const emailInput = document.getElementById("email-input").value;
-      const passwordInput = document.getElementById("password-input").value;
+      const emailInput = document.getElementById("signup-email-input").value;
+      const passwordInput = document.getElementById("signup-password-input")
+         .value;
       await this.setEmailState(emailInput);
       await this.setPasswordState(passwordInput, emailInput);
       if (
@@ -116,7 +117,7 @@ export default class SignUp extends React.Component {
                            Let's get you signed up!
                         </p>
 
-                        <label className="" htmlFor="email-input">
+                        <label className="" htmlFor="signup-email-input">
                            Email Address
                         </label>
                         <input
@@ -126,7 +127,7 @@ export default class SignUp extends React.Component {
                               "mb-2": true,
                               "is-invalid": this.state.hasEmailError,
                            })}
-                           id="email-input"
+                           id="signup-email-input"
                         />
                         {this.state.hasEmailError && (
                            <p className="text-danger">
@@ -135,7 +136,7 @@ export default class SignUp extends React.Component {
                         )}
 
                         <p className="text-danger" id="emailError"></p>
-                        <label htmlFor="password-input">
+                        <label htmlFor="signup-password-input">
                            Create a Password
                         </label>
                         <input
@@ -145,7 +146,7 @@ export default class SignUp extends React.Component {
                               "mb-2": true,
                               "is-invalid": this.state.hasPasswordError,
                            })}
-                           id="password-input"
+                           id="signup-password-input"
                         />
                         {this.state.hasPasswordError && (
                            <p className="text-danger">
