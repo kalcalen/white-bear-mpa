@@ -15,7 +15,7 @@ export default function Landing() {
                   </div>
                </div>
                <div className="row mt-md-6 mt-xl-8 mt-4">
-                  <div className="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-12"></div>
+                  {/* <div className="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-12"></div> */}
                   <SignUp />
                   <LogIn />
                </div>
