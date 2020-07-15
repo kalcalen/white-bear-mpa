@@ -91,3 +91,8 @@ textarea {
 .pointer {
    cursor: pointer;
 }
+
+.disabled {
+   pointer-events: fill !important;
+   cursor: not-allowed;
+}

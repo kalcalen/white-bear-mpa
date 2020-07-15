@@ -6,7 +6,6 @@ import { v4 as getuuid } from "uuid";
 export default class SignUp extends React.Component {
    constructor(props) {
       super(props);
-      console.log("In a new class components");
       this.state = {
          isDisplayingInputs: false,
          emailError: "",
